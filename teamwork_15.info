@@ -1,0 +1,17 @@
+name = Teamwork 15
+description = A straight-forward, rounded and friendly theme for your non-profit organization based on http://www.teamworkenglewood.org
+backdrop = 1.x
+type = theme
+version = 1.x-1.1
+
+; stylesheets[all][] = css/style.css
+; stylesheets[print][] = css/print.css
+
+; scripts[] = js/scripts.js
+breakpoints[all] = (min-width: 0em)
+breakpoints[small] = (min-width: 35em)
+breakpoints[large] = (min-width: 55em)
+
+; We need at least one setting for the theme settings page to appear in the
+; menu. Color module provides our defaults, so we just register a dummy setting.
+settings[color] = true

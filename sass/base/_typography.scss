@@ -1,0 +1,315 @@
+/*
+ * Typography
+ *
+ * Text styles, not colours go in this file
+ * these defaults come from the Bartik theme
+ * Big thanks to Jen Simmons for these defaults https://www.drupal.org/u/jensimmons
+ */
+html {
+  -webkit-text-size-adjust: 100%;
+
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+
+  /* 2 */
+  -webkit-font-smoothing: antialiased;
+}
+
+// Addresses font-family inconsistency between 'textarea' and other form elements.
+html,
+button,
+input,
+select,
+textarea {
+  font-family: $base-font-family;
+}
+
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  padding-bottom: 2em;
+}
+
+/* Line-heights */
+h1 {
+  margin: $h1_margin;
+  margin-bottom: 0.6em;
+  padding: $h1_padding;
+  font-size: $h1_font_size;
+  clear: both;
+  line-height: 1.19;
+}
+
+h2 {
+  margin: $h2_margin;
+  padding: $h2_padding;
+  font-size: $h2_font_size;
+  clear: both;
+  line-height: 1.17;
+  margin-bottom: 1em;
+}
+
+h3 {
+  margin: $h3_margin;
+  padding: $h3_padding;
+  font-size: $h3_font_size;
+  margin-top: 1em;
+}
+
+h4 {
+  margin: $h4_margin;
+  padding: $h4_padding;
+  font-size: $h4_font_size;
+}
+
+h5 {
+  margin: $h5_margin;
+  padding: $h5_padding;
+  font-size: $h5_font_size;
+}
+
+h6 {
+  margin: $h6_margin;
+  padding: $h6_padding;
+  font-size: $h6_font_size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: bold;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  text-decoration: underline;
+}
+
+address {
+  font-style: normal;
+}
+
+blockquote,
+dl,
+ol,
+p,
+table,
+ul {
+  margin-bottom: 1.4em;
+}
+
+cite,
+em {
+  font-style: italic;
+}
+
+dt {
+  margin-top: 1.4em;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  margin-bottom: 2em;
+  padding: 1em 1.5em;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  height: 1px;
+  margin: 1.5em 0;
+}
+
+iframe {
+  width: 100%;
+}
+
+input,
+select,
+textarea {
+  font-size: 1em;
+}
+
+legend {
+  font-size: 1.7em;
+  margin: 0 0 0 -0.5em;
+  padding: 0.1em 0.75em 0.1em;
+}
+
+legend em {
+  font-size: 0.7em;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 0.3em;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 1.5em;
+}
+
+ol li {
+  margin-bottom: 0.5em;
+}
+
+ol ol {
+  list-style: lower-alpha;
+}
+
+select {
+  padding: 0.1em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table p {
+  margin: 0;
+}
+
+td {
+  vertical-align: top;
+}
+
+thead th {
+  font-size: 1em;
+  padding: 0 0.4em 0.25em;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 1.5em;
+}
+
+ul ol li {
+  padding: 0;
+}
+
+p {
+  margin: 0 0 1.2em;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+code,
+pre,
+kbd,
+samp,
+var {
+  padding: 0 0.4em;
+  font-size: 0.857em;
+  font-family: Menlo, Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono L", "DejaVu Sans Mono", monospace, "Courier New";
+}
+
+pre code,
+pre kbd,
+pre samp,
+pre var,
+kbd kbd,
+kbd samp,
+code var {
+  font-size: 100%;
+  background-color: transparent;
+}
+
+pre code,
+pre samp,
+pre var {
+  padding: 0;
+}
+
+.description code {
+  font-size: 1em;
+}
+
+kbd {
+  border: 1px outset #575757;
+  margin: 0 3px;
+  display: inline-block;
+  padding: 0 6px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+pre {
+  margin: 10px 0;
+  overflow: hidden;
+  padding: 15px;
+  white-space: pre-wrap;
+}
+
+/* ------------------ Reset Styles ------------------ */
+caption {
+  text-align: left;
+
+  /* LTR */
+  font-weight: normal;
+}
+
+[dir="rtl"] caption {
+  text-align: right;
+}
+
+blockquote {
+  border-left: 4px solid #bbb;
+
+  /* RTL */
+  font-style: italic;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+[dir="rtl"] blockquote {
+  border-left: none;
+  border-right: 4px solid #bbb;
+}
+
+blockquote:before {
+  content: "\201C";
+
+  /* RTL */
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.2em;
+  vertical-align: -.4em;
+}
+
+[dir="rtl"] blockquote:before {
+  content: "\201D";
+}
+
+blockquote:after {
+  content: "\201D";
+
+  /* RTL */
+  font-size: 3em;
+  line-height: 0.1em;
+  vertical-align: -.45em;
+}
+
+[dir="rtl"] blockquote:after {
+  content: "\201C";
+}
+
+blockquote > p:first-child {
+  display: inline;
+}
+
+a.feed-icon {
+  display: inline-block;
+  padding: 15px 0 0 0;
+}
