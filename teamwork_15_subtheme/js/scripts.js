@@ -1,11 +1,11 @@
 /**
  * @file
- * JS for Teamwork15 theme.
+ * JS for Teamwork15 sub theme.
  */
 (function($, Backdrop, window, document, undefined) {
 
   // Show dropdown on hover.
-  Backdrop.behaviors.teamwork_15_dropdown = {
+  Backdrop.behaviors.teamwork_15_subtheme_dropdown = {
     attach: function(context, setting) {
       //your custom action here
     }
@@ -14,6 +14,7 @@
   $(document).ready(function() {
 
     // run Javascript on page load here
+
 
 //    jQuery(window).scroll(function() {
 //      var win = jQuery(this);

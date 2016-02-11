@@ -1,9 +1,9 @@
 <?php
 /**
  * @file
- * Theme settings file for Teamwork 15.
+ * Theme settings for Teamwork 15 parent theme
  *
- */
+*/
 
 function teamwork_15_form_system_theme_settings_alter(&$form, &$form_state, $form_id = NULL) {
 
@@ -11,9 +11,19 @@ if (isset($form_id)) {
    return;
   }
 
+$form['disclaimer00'] = array(
+  '#markup' => '<p><strong>' . t('These settings for the parent theme do NOT extend into the subtheme.') . '</strong></p>',
+);
+
+$form['teamwork_15_dynamic_menu'] = array(
+      '#type' => 'checkbox',
+      '#title' => t('Use dynamic site main menu.  Uncheck to use a fixed main menu.'),
+      '#default_value' => theme_get_setting('teamwork_15_dynamic_menu', 'teamwork_15'),
+    );
+
 $form['teamwork_15_cdn'] = array(
     '#type'          => 'checkbox',
-    '#title'         => t('<b>Use Cloudflare CDN</b> instead of this website to serve the base CSS and Javascript files.  If you are using SASS, you will have to manually adjust your imports to avoid loading the same styles twice.'),
+    '#title'         => t('<b>Use Cloudflare CDN</b> instead of this website to serve the base CSS file.'),
     '#default_value' => theme_get_setting('teamwork_15_cdn', 'teamwork_15'),
   );
 
@@ -92,5 +102,9 @@ $form['teamwork_15_footer_main_background_blurred'] = array(
       '#title' => t('Blur this background'),
       '#default_value' => theme_get_setting('teamwork_15_footer_main_background_blurred', 'teamwork_15'),
     );
+
+$form['recommended'] = array(
+  '#markup' => '<p>' . t('Looking for additional theme features?  You might find what you are looking in layouts or modules.  Some common items to add to your site might be:<br><a href="https://backdropcms.org/modules">Modules</a><br><a href="https://backdropcms.org/layouts">Layouts</a><br>Menus<br><a href="https://backdropcms.org/project/mobile_navigation">Mobile Navigation</a><br><a href="https://backdropcms.org/project/responsive_menus">Responsive Menus</a><br><a href="https://backdropcms.org/project/wpmenu">WPMenu</a><br>Widgets<br><a href="https://backdropcms.org/project/google_fonts">Google Fonts</a><br><a href="https://backdropcms.org/project/back_to_top">Back To Top</a><br><a href="https://backdropcms.org/project/fanciblock">FanciBlock</a><br><a href="https://backdropcms.org/project/flexslider">FlexSlider</a><br>Parallax<br><a href="https://backdropcms.org/project/parallax_bg">Parallax_BG</a><br><a href="https://backdropcms.org/project/scrollreveal">Scroll Reveal</a><br><a href="https://backdropcms.org/project/void_menu">Void Menu</a> ') . '</p>',
+);
 
 }
