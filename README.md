@@ -1,6 +1,8 @@
 Teamwork 15
 ------------
 
+This theme is NOT updated for Backdrop CMS 1.4+ and not currently supported.  Use at your own risk.
+
 Teamwork_15 theme is good, straight-forward starting theme for non-profits/organzations.
 
 - this theme is based on http://www.teamworkenglewood.org
@@ -55,6 +57,8 @@ TESTED
 -----
 
 This theme has been tested in Backdrop 1.2 successfully.
+
+This theme is unsupported for Backdrop 1.4+ due to lack of time.
 
 http://dev-backdropthemes.pantheon.io/teamwork-15
 
