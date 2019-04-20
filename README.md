@@ -296,8 +296,9 @@ This project is GPL v2 software. See the LICENSE.txt file in this directory for 
 Maintainers
 -----------
 
-- biolithic, seeking
+* Tim Erickson (https://github.com/stpaultim)
+* David Radcliffe (https://github.com/radcliffe)
 
 Ported to Backdrop by:
 
-- biolithic <https://github.com/biolithic>
+* biolithic (https://github.com/biolithic)
