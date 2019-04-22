@@ -60,11 +60,6 @@ This theme has been tested in Backdrop 1.2 successfully.
 
 This theme is unsupported for Backdrop 1.4+ due to lack of time.
 
-http://dev-backdropthemes.pantheon.io/teamwork-15
-
-http://dev-backdropthemes.pantheon.io/demo-teamwork-15
-
-http://dev-backdropthemes.pantheon.io/admin/appearance/styleguide/teamwork_15
 
 KNOWN ISSUES
 ---------------------
