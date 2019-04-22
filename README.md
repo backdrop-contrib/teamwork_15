@@ -1,3 +1,8 @@
+_As of April 2019 we are making an attempt to revise this theme and bring it into working order. We are happy to make this theme a community project and an opportunity for front end themers or site manager to contrib towards the development of a new theme. We've created an [issue to discuss the future of this theme](https://github.com/backdrop-contrib/teamwork_15/issues/2)._
+
+_Everything below this message is under review and subject to change._
+
+
 Teamwork 15
 ------------
 
